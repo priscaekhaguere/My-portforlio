@@ -1,0 +1,29 @@
+body {
+    
+}
+
+#wrapper {
+    background-color: #ddd;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-color: black;
+    display: block;
+    width: 100%;
+    z-index: 10;
+}
+
+#navbar nav {
+    display: flex;
+}
+
+.page {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 10px;
+    background-color: #eee; 
+}
