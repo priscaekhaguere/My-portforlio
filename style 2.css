@@ -1,5 +1,5 @@
 body {
-    
+    color: #222;
 }
 
 #wrapper {
@@ -21,9 +21,57 @@ body {
     display: flex;
 }
 
+#navbar nav a{
+    flex:0 0 25vw;
+    text-align: center;
+    font-size: 2em;
+    color: #eee;
+    text-decoration: none;
+    height: 60px;
+    line-height: 2em;
+    cursor: pointer;
+}
+
+#navbar nav a:hover{
+    background-color: #222;
+    color: white;
+}
+#home {
+    background-image: url ('images/background-img1.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
 .page {
     height: auto;
     min-height: 100vh;
     padding: 60px 10px;
     background-color: #eee; 
+}
+.jumbotron{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    margin: 100px auto;
+    border: 5px solid white;
+    text-align: center;
+    border-radius: 10px;
+}
+.jumbotron h2{
+    font-size: 2em;
+    color: black;
+}
+.jumbotron h3{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #222;
+}
+@media all and (max-width: 640px) {
+    #navbar nav a {
+        font-size: 1.2em;
+        height: 30px;
+    }
+    #navbar{
+        height: 30px;
+    }
 }
